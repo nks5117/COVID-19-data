@@ -104,3 +104,34 @@
 
 文件 [`data-who.csv`](data-who.csv) 中的数据来自世界卫生组织（WHO）每日发布的 [Situation Report](situation_reports)，使用数据前请务必仔细阅读各 Situation Report 来查看各项数据的解释和说明。
 
+## 其他数据源推荐
+
+### 阿里巴巴
+
+接口URL：`https://cdn.mdeer.com/data/yqstaticdata.js`
+
+数据格式：JSON
+
+Demo
+```html
+<script>
+window.callbackstaticdata = function(res){
+    console.log(res);
+    // 数据输出
+    console.log(JSON.stringify(res));
+}
+
+// t 为时间戳，防止缓存
+$.getScript("https://cdn.mdeer.com/data/yqstaticdata.js?callback=callbackstaticdata&t="+(+new Date));
+</script>
+```
+
+### 新浪
+
+`https://gwpre.sina.cn/interface/fymap2020_data.json`
+
+### 网易
+
+`https://c.m.163.com/ug/api/wuhan/app/data/list-total`
+
+`https://c.m.163.com/ug/api/wuhan/app/data/list-by-area-code?areaCode=`
