@@ -135,3 +135,7 @@ $.getScript("https://cdn.mdeer.com/data/yqstaticdata.js?callback=callbackstaticd
 `https://c.m.163.com/ug/api/wuhan/app/data/list-total`
 
 `https://c.m.163.com/ug/api/wuhan/app/data/list-by-area-code?areaCode=`
+
+### 约翰斯·霍普金斯大学
+
+`https://github.com/CSSEGISandData/COVID-19`
